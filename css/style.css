@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+.display-modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hide{
+  display: none;
+}
+
+.modal {
+  position: relative;
+  width: 300px;
+
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  transform: translate(-50%, -70%);
+  background: white;
+}
+
+.modal-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.the-button{
+  cursor: pointer;
+}
