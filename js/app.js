@@ -1,11 +1,12 @@
 // Enemies our player must avoid
-var Enemy = function(y, speed) {
+class Enemy {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
 
+  constructor(y, speed){
     // Number of pixel per x move
     this.xMove = 101;
     //Set initial position
@@ -16,15 +17,11 @@ var Enemy = function(y, speed) {
     this.border = this.xMove*5;
     //Bug's image
     this.sprite = 'images/enemy-bug.png';
-};
+}
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
-Enemy.prototype.update = function(dt) {
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-    // all computers.
-
+  update(dt) {
     if (this.x < this.border){
       //If enemy is not passed boundary
         //Move forward
@@ -34,37 +31,13 @@ Enemy.prototype.update = function(dt) {
       //Reset speed to 0 to remove with removeBug function
       this.speed = 0;
     }
-};
+}
 
 // Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
+    render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
-
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
-
-//Hero Class
-  //Constructor
-    //Properties
-      //x pos
-      //y pos
-      //sprite image
-    //Method
-      //Update position
-        //Check collision
-          //Did player x and y collide with Enemy
-        //Check if win
-          //Did player x and y reach final tile
-
-      //render
-        //Draw player sprite on current x and y coord position
-      //Handle keyboard input
-        //Update player's x and y property according to input
-      //Reset Hero
-        //Set x and y to starting x and y
-
+  }
+}
 
 class Hero{
   constructor(){
@@ -187,10 +160,6 @@ setInterval(function(){
   }
   removeBug();
 }, 10);
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
-
 
 
 // This listens for key presses and sends the keys to your
