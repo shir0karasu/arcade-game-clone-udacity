@@ -2,6 +2,7 @@
 
 ## Instructions
 Click on the link the play the game: https://shir0karasu.github.io/arcade-game-clone-udacity/
+
 Cross to the river! Your cat hates bugs!!!
 
 ## How to play
