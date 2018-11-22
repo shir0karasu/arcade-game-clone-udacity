@@ -1,0 +1,66 @@
+/*=================Responsive===================*/
+
+@media screen and (min-width: 800px){
+	nav h1 a {
+		font-size: 40pt;
+	}
+	#restaurants-list li p{
+		font-size: 14pt;
+	}
+	#restaurants-list li h1{
+		font-size: 20pt;
+	}
+	#restaurant-list li a {
+		font-size: 12pt;
+	}
+	.filter-options h2 {
+		font-size: 18pt;
+	}
+
+	.filter-options select {
+		font-size: 14pt;
+	}
+}
+
+@media screen and (min-width: 649px) and (max-width: 799px){
+	nav h1 a {
+		font-size: 30pt;
+	}
+	#restaurants-list li p{
+		font-size: 12pt;
+	}
+	#restaurants-list li h1{
+		font-size: 18pt;
+	}
+	#restaurant-list li a {
+		font-size: 10pt;
+	}
+	.filter-options h2 {
+		font-size: 16pt;
+	}
+	.filter-options select {
+		font-size: 12pt;
+	}
+}
+
+@media screen and (max-width: 650px){
+	nav h1 a {
+		font-size: 20pt;
+	}
+	body.inside ,td.inside, th.inside, p.inside{
+		font-size: 25pt;
+	}
+	#breadcrumb li {
+		font-size: 18pt;
+	}
+	.inside #map-container {
+		display: none;
+	}
+	#restaunt-container, #reviews-container {
+		width: 100%;
+	}
+	#restaurant-name{
+		font-size: 40pt;
+	}
+
+}
